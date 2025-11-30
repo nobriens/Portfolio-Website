@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!img) return;
 
   const images = [
-    "images/aib1.png",
+    "images/Aib1.png",
     "images/aib3.png",
     "images/aib5.png",
     "images/aib6.png"
@@ -51,3 +51,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 500);
   });
 });
+
