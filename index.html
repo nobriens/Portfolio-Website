@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neesan Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css" /> <!--this section connects the HTML to the style sheet-->
+</head>
+
+<body>
+  <div class="container"> <!--I used the container to keep everything in the middle of the page, mainly for aesthetics-->
+
+  
+    <nav class="navbar"> <!--here I made the Navbar, to navigate from page to page. I made it so it changes based on each page you're on e.g 'contact' would not be visible on the navbar on the contact page -->
+     <div class="logo">
+  <a href="hero">
+    <img src="images/nlogoorange.png" alt="Neesan logo"></a>
+</div>
+      <ul class="nav-links"> <!--this part is what I changed based on each page-->
+        <li><a href="#home">Home</a></li> <!--links to top of the page-->
+        <li><a href="projects/project1.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+   
+    <header class="hero" id="hero">  <!--Opening title section-->
+      <h1>
+        Hi there, Im Neesan <!--here is the opening text to tell people a little about me, it is quite common in portfolio websites so I thought I would add it-->
+        Im a designer who creates
+        interactive digital works that connect
+        people through thoughtful design.
+      </h1>
+    </header>
+
+   <section class="recent-work" id="work">  <!--Here i begin the recent work section, to give a taste to anyone viewing my page of my work -->
+  <h2>Recent Work</h2>
+  <div class="project-grid"> <!--I made this part a grid to layout the page in a clearer way and not take up too much on the homepage-->
+    
+    <div class="project large">
+      <img id="ridewise-img" src="images/ridewise1.png" alt="ridewise project image"> <!--here I sourced the project image from the image folder -->
+      <div class="project-info">
+        <h3>RideWise</h3>
+        <p>An all in one <strong>cycling assistant</strong> that helps riders plan safer routes, avoid theft hotspots, find secure locking locations, track bike health, discover nearby trails, and connect with repair services — designed to support cyclists wherever they ride.</p>  <!--here I used the strong tag to make certain words pop out-->
+        <button class="case-btn" onclick="window.location.href='projects/project1.html'">View Project</button><!--Here is the button that links the card to its own specific projecvt page-->
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="project small"><!--I used the project small tag to create a smaller variation-->
+        <img id="aib-img" src="images/Aib1.png" alt="AIB project image">
+        <div class="project-info">
+          <h3>AIB Work</h3>
+          <p>UX and UI work done during my <strong>internship with AIB </strong> The two main projects I worked on were a <strong>Branch Locator</strong> and a <strong>Green Living quiz, </strong> which helps users determine how environmentally friendly they are based on their daily actions.</p>
+          <button class="case-btn" onclick="window.location.href='projects/project2.html'">View Project</button>
+        </div>
+      </div>
+
+      <div class="project small">
+        <img id="peer2pal-img" src="images/peer2pal1.png" alt="Peer2Pal project image">
+        <div class="project-info">
+          <h3>Peer2Pal</h3>
+          <p>An app that allows EV owners to rent out their chargers to other EV users. <strong>Connecting people looking for a charge </strong> with nearby, available stations, finding an EV charger is more convenient and accessible.</p>
+          <button class="case-btn" onclick="window.location.href='projects/project3.html'" >View Project</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <section class="about" id="about">  <!--here I began the about me section of the homepage-->
+      <h2>ABOUT ME</h2>
+      <div class="about-text">
+        <p>
+         Hi Im Neesan. Im a 23 year old Product Designer. I recently graduated with BSc in Product Design from Maynooth University. Ive had a passion for design for as long as I've known, but this passion has only developed over the years. With a keen eye for detail and a deep interest in user experience, I strive to design products that not only look aesthetically pleasing but also enhance people's lives.
+        </p>
+        <p>
+          I have always had a natural flair for design, which spurred my interest in learning more about many creative fields like drawing and graphic design. This desire propelled me into the field of product design as my interests developed. I find it to be an incredibly fascinating challenge to be able to develop practical solutions that solve actual problems. I get a great deal of satisfaction from creating unique, useful designs that solve real world issues. My love for product design is fueled by the constant search for elegant and useful solutions.
+        </p>
+      </div>
+    </section>
+
+<section class="education" id="education">  <!--In the education section I wanted to display my recent timeline both academically and professionally-->
+  <h2>Education</h2>
+
+  <div class="education-grid">
+
+    <div class="edu-item">
+      <div class="edu-logo">
+        <img src="images/Trinity_Black_Logo.png" alt="Trinity logo"> <!--I probably didn't need to include the logo but I thought it would be a nice edition-->
+      </div>
+      <div class="edu-text">
+        <h3>Trinity College Dublin</h3>
+        <h4>MSc Interactive Digital Media</h4>
+        <p>Sept 2025 — Present<br>Exploring UX design, interactive systems, digital storytelling, and emerging media technologies through research-led, hands-on projects.</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-logo">
+        <img src="images/robuslogo.png" alt="Robus logo">
+      </div>
+      <div class="edu-text">
+        <h3>Robus Lighting</h3>
+        <h4>New Product Development Graduate</h4>
+        <p>May 2025 — Sept 2025<br>Supported end to end design and launch of innovative lighting products.</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-logo">
+        <img src="images/aiblogo.png" alt="AIB logo">
+      </div>
+      <div class="edu-text">
+        <h3>AIB</h3>
+        <h4>Intern UX UI Designer</h4>
+        <p>Feb 2022 — Sep 2022<br>Designed intuitive digital interfaces and improved user experience across banking platforms.</p>
+      </div>
+    </div>
+
+    <div class="edu-item">
+      <div class="edu-logo">
+        <img src="images/maynoothlogo.png" alt="maynooth logo">
+      </div>
+      <div class="edu-text">
+        <h3>Maynooth University</h3>
+        <h4>BSc Product Design and Innovation</h4>
+        <p>Sept 2019 — Jun 2023 <br>Gained a strong foundation in design thinking, prototyping, and user-centered innovation.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- CONTACT -->
+    <footer class="contact" id="contact">
+      <h2>Wanna <br> Connect?</h2>
+      <h3>Say Hello</h3>
+      <div class="contact-buttons">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <button>Contact</button>
+      </div>
+    </footer>
+
+<section id="footer-mario"> <!-- mario game -->
+  <h3 class="game-title">Or connect by playing</h3>
+        <p>Controls:</p>
+      <p>Arrow keys: move Left and Right</p>
+      <p>Space: Jump</p>
+
+<div class="gba-frame">
+    <!-- GBA image -->
+    <img src="images/gba.png" alt="Game Boy Advance" class="gba-img">
+
+    <!-- Screen area where the game lives -->
+  <div class="gba-screen">
+      <div class="game-container">
+
+    <div class="ui">
+      <p>Score: <span id="score">0</span></p>
+    </div>
+
+    <div id="game-area">
+      <div id="game-scale-layer">
+        <div id="mario"></div>
+      </div>
+    </div>
+
+    <div id="game-start">
+      <h2>Press Space or Click to Start</h2>
+      <button id="start-button">Start Game</button>
+    </div>
+
+    <div id="game-over">
+      <h2 id="game-over-title">Game Over</h2>
+      <p>Score: <span id="final-score">0</span></p>
+      <button id="restart-button">Play Again</button>
+    </div>
+
+  </div>
+
+</section>
+
+<script src="imagefadeproject1.js" defer></script>
+<script src="imagefadeproject2.js" defer></script>
+<script src="imagefadeproject3.js" defer></script>
+<script src="game.js"></script>
+</body>
+</html>
