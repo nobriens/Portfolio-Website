@@ -3,26 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <title>Neesan Portfolio</title>
-  <link rel="stylesheet" href="stylesheet.css" /> <!--this section connects the HTML to the style sheet-->
+  <link rel="stylesheet" href="stylesheet.css"> <!--this section connects the HTML to the style sheet-->
 </head>
 
 <body>
   <div class="container"> <!--I used the container to keep everything in the middle of the page, mainly for aesthetics-->
 
-  
-    <nav class="navbar"> <!--here I made the Navbar, to navigate from page to page. I made it so it changes based on each page you're on e.g 'contact' would not be visible on the navbar on the contact page -->
-     <div class="logo">
-  <a href="hero">
-    <img src="images/nlogoorange.png" alt="Neesan logo"></a>
-</div>
-      <ul class="nav-links"> <!--this part is what I changed based on each page-->
-        <li><a href="#home">Home</a></li> <!--links to top of the page-->
-        <li><a href="projects/project1.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <nav class="navbar">
+  <div class="logo">
+    <a href="#hero">
+      <img src="images/nlogoorange.png" alt="Neesan logo">
+    </a>
+  </div>
 
+  <ul class="nav-links">
+    <li><a href="index.html#home">Home</a></li>
+
+    <li class="dropdown">
+<span class="dropbtn">Work</span>
+      <ul class="dropdown-content">
+        <li><a href="projects/project1.html">RideWise</a></li>
+        <li><a href="projects/project2.html">AIB Work</a></li>
+        <li><a href="projects/project3.html">Peer2Pal</a></li>
+      </ul>
+    </li>
+
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
    
     <header class="hero" id="hero">  <!--Opening title section-->
       <h1>
@@ -189,3 +198,4 @@
 <script src="game.js"></script>
 </body>
 </html>
+
